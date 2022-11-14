@@ -22,18 +22,33 @@ Each moon has a variety of names, some of which overlap. I would like a NLU syst
 
 
 # TODOs
+
+Data cleaning
 - [x] Add names from Wikipedia
 - [x] Add farmer's almanac names
 - [x] Add English/UK names (some are anchored on solar events)
-- [] Finish filling out blanks in moon_synonyms for almanac names
-- [] Figure out what to do about moon names that are tied to solar events & not Julian calander (e.g. first moon after Yule)
-- [] Detect duplicates
-- [] Pick programming langauge (R + Shiny? Python + Flask? Look at what other libraries are using.)
-- [] Create text input interface
-- [] Find library for getting full moon dates
-- [] (Fuzzy? Exact?) match iput text to specific moon name
-- [] Moon name to date (next full one) 
-- [] Return date & source
+- [x] Finish filling out blanks in moon_synonyms for almanac names
+
+Design decisions
+- [ ] Figure out what to do about moon names that are tied to solar events & not Julian calander (e.g. first moon after Yule)
+- [ ] What to do about duplicates/ambiguous names (e.g. more than one moon can be the strawberry moon)
+- [ ] What to do if mulitple moon names are provided? Return multipule dates?
+- [ ] Is natural langauge the right interface for this? Should we do something different, like just a flat HTML table?
+
+NER 
+- [ ] Decdie: rule based or fuzzy?
+- [ ] Pick programming langauge (R + Shiny? Python + Flask? Look at what other libraries are using.)
+- [ ] Extract moon names using NER (maybe)
+- [ ] (Fuzzy? Exact?) match iput text to specific moon name
+
+Moon name to date
+- [ ] Find library for getting full moon dates
+- [ ] Moon name to date (next full one) 
+- [ ] Return date & source
+
+UI
+- [ ] Create text input interface
+- [ ] Convert date to output format
 
 
 # Notes on sources in moon_synoyms.tsv
