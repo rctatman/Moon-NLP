@@ -2,9 +2,9 @@
 
 # What it is
 
-There is a long tradition in the (Eastern?) US of naming full moons & using this lunar calander to denote the general time range  of natural events and thus when to do various garden tasks.
+There is a long tradition in the (Eastern?) US of naming full moons & using this lunar calendar to denote the general time range  of natural events and thus when to do various garden tasks.
 
-Each moon has a variety of names, some of which overlap. I would like a NLU system which can take in a moon name & translate it to a Gregorian calander date or span.
+Each moon has a variety of names, some of which overlap. I would like a NLU system which can take in a moon name & translate it to a Gregorian calendar date or span.
 
 # MVP features
 - A list of synonym moon names & sources
@@ -52,21 +52,20 @@ NER? (Note: no NER is actually going to be done in this project)
 - [X] (Fuzzy? Exact?) match iput text to specific moon name
     Can use built in table search in shiny 
 
+Dashboard
+- [X] Create data table dashboard https://shiny.rstudio.com/gallery/basic-datatable.html
+- [X] Hosting?
+
 Moon name to date
 - [ ] Find library for getting full moon dates
     Several in R.
 - [ ] Moon name to date (next full one) 
 - [ ] Return date & source
 
-UI
-- [ ] Create text input interface
-- [ ] Convert date to output format
-
-
 # Notes on sources in moon_synoyms.tsv
-- "Beard, Wikipedia" Beard 1918 guide for the boyscouts as extracted on [the Wikipedia page for the full moon](https://en.wikipedia.org/wiki/Full_moon)
+- "Beard, Wikipedia" Beard 1918 guide for the boy scouts as extracted on [the Wikipedia page for the full moon](https://en.wikipedia.org/wiki/Full_moon)
 - "Almanac" Names provided by the Farmer's almanac on their page "Full Moon Names for 2022" https://www.almanac.com/full-moon-names
-- "UCL" names provdied by Stephen Boyle at the UCL Observatory https://www.ucl.ac.uk/~ucapsj0/moon/index.html
+- "UCL" names provided by Stephen Boyle at the UCL Observatory https://www.ucl.ac.uk/~ucapsj0/moon/index.html
 - NOT INCORPERATED INTO DATA, multi-lingual moon/lunar month names https://docs.google.com/spreadsheets/d/1RtmPorWmy9_HDS2epfx9dg3-H37IZQ2-EZs9ZCb4znk/edit#gid=0 by Kevin Finity
 
 # Mock up of interface (note: moot, we're going with a different solution)
